@@ -23,8 +23,13 @@ public class FizzBuzzTest {
 
         @Test
         public void 数字を返すこと_2() {
-            assertEquals("2", fizzbuss.say(2));
+            assertEquals("2", fizzbuss.convert(2));
         }
-        // TODO 1. 数値2以外のケースでも期待通り数字返すことを確認
+
+        @Test
+        public void 数字を返すこと_4() {
+            assertEquals("4", fizzbuss.convert(4));
+        }
+
     }
 }
